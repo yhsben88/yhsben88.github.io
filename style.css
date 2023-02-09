@@ -1,0 +1,327 @@
+*{
+    color: #777;
+    font-family: Geneva;
+}
+
+/*
+    navigation
+*/
+.main-header{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-top: 3px solid #BF40BF;
+    border-bottom: 2px solid #E9E9E9;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+}
+
+.nav ul{
+    display: flex;
+    margin: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.nav li{
+    display:flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.nav a{
+    flex-grow: 1;
+    padding: .5em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.nav a:hover{
+    color: #752496;
+    background-color: #E3E3E3;
+}
+/*
+    end of navigation
+*/
+
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.main .left{
+    display: flex;
+    padding: 0px 50px 0px 100px;
+    border-right: 2px solid #f7f7f7;
+}
+
+.main .right{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px 0px 50px;
+    width: 40vw;
+}
+
+
+/*
+    stuff on left
+*/
+.image-with-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.head-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.name{
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 5px;
+}
+
+.job-title{
+    font-size: 1em;
+    margin: 5px;
+}
+
+.email{
+    font-size: 0.8em;
+    color: #BF40BF;
+    margin: 5px;
+}
+/* 
+    end of stuff on left
+*/
+
+/*
+    stuff on right(about)
+*/
+
+.title{
+    font-weight: normal;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-content p, 
+.about-content label{
+    color: #000000;
+}
+/*
+    end of stuff on right(about)
+*/
+
+/*
+    stuff on right(skills)
+*/
+.skills-content{
+    display: flex;
+    flex-direction: column;
+}
+.skills-content progress{
+    flex-grow: 1;
+    width: 40vw;
+}
+
+.skills-content label{
+    color: #000000;
+    font-weight: bold;
+    flex-grow: 1;
+    font-size: 1.3em;
+}
+/*
+    end of stuff on right(skills)
+*/
+
+/*
+    education page
+*/
+.education-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.education-content span{
+    color:#000000;
+    font-size: 0.9em;
+}
+
+/*
+    end of education page
+*/
+
+/* table building specific */
+.table-row{
+    display: flex;
+}
+
+.column-name{
+    flex: 1;
+}
+
+.column-value{
+    flex: 1;
+    text-align: end;
+}
+.row-head{
+    padding-top: 10px;
+}
+.column-name.row-head{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+/* end of table building specific */
+
+/*
+    experience page
+*/
+.experience-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-content span{
+    color:#000000;
+    font-size: 0.8em;
+}
+
+.experience-content .column-value.row-head{
+    font-size: 1em;
+}
+
+.experience .table-row{
+    flex: 1;
+}
+
+.experience-content .download{
+    margin-top: 80px;
+}
+
+/*
+    end of experience page
+*/
+
+
+/* 
+    interests page
+*/
+
+.interests-content{
+    padding-top: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: "-";
+    padding: 0;
+}
+
+.list-item{
+    color:#2e2e2e;
+    padding: 5px 0 0 5px;
+}
+/*
+    end interests page
+*/
+
+.download ins{
+    color: #BA6AD4;
+}
+
+footer{
+    display: flex;
+    background-color: rgb(245, 241, 241);
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    flex-grow: 1;
+}
+
+
+@media only screen and (max-width: 800px){
+    .main .left{
+        border-right: none;
+        padding: 0px 200px 0px 200px;
+        border-bottom: 2px solid #f7f7f7;
+        width: 40vw;
+    }
+
+    .main{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    
+/*
+    stuff on left
+*/
+
+.head-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.name{
+    font-size: 1.8em;
+    font-weight: normal;
+    margin: 10px;
+}
+
+.job-title{
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+.email{
+    font-size: 1.1em;
+    color: #BF40BF;
+    margin: 10px;
+}
+/* 
+    end of stuff on left
+*/
+
+/*
+    stuff on right
+*/
+.main .right{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px 0px 50px;
+    width: 70vw;
+    align-items: center;
+}
+
+.right .title{
+    font-weight: normal;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.about-content p, .about-content label{
+    text-align: center;
+    color: #000000;
+    align-items: center;
+}
+
+/*
+    end of stuff on right
+*/
+
+
+}
